@@ -1,0 +1,17 @@
+{
+  "name": "reason",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx example.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "190proof": "^1.0.3",
+    "tsx": "^4.8.0",
+    "zod": "^3.23.5"
+  }
+}
