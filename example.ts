@@ -17,7 +17,8 @@ console.log(">>>>> result1", result1); // { result: 3 }
 def gen multiply(a: number, b: number): number
 result = multiply(1.83, 23)
 */
-define(
+await define(
+  "gen",
   "multiply",
   z.object({ a: z.number(), b: z.number() }),
   z.object({ result: z.number() })
@@ -29,7 +30,8 @@ console.log(">>>>> result2", result2); // { result: 278.3 }
 def reason isPhoneNumber(maybePhoneNumber: string): boolean
 result = isPhoneNumber("123")
 */
-define(
+await define(
+  "reason",
   "isPhoneNumber",
   z.object({ maybePhoneNumber: z.string() }),
   z.object({ isPhoneNumber: z.boolean() })
@@ -41,7 +43,8 @@ console.log(">>>>> result3", result3); // { isPhoneNumber: false }
 def reason getCountryFromPhoneNumber(phoneNumber: string): enum<Countries>
 result = getCountryFromPhoneNumber("123")
 */
-define(
+await define(
+  "reason",
   "getCountryFromPhoneNumber",
   z.object({ phoneNumber: z.string() }),
   z.object({

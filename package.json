@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "190proof": "^1.0.3",
+    "190proof": "~1.0.4",
     "tsx": "^4.8.0",
     "zod": "^3.23.5"
   }
